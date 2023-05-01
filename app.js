@@ -17,6 +17,8 @@ function success(result) {
     <h2>Success!</h2>
     <p><a href="${result}">${result}</a></p>
     `;
+    window.open(result, "_blank");
+    
     // Prints result as a link inside result element
 
     scanner.clear();
