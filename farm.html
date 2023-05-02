@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Farm land</title>
+    <script type="text/javascript">
+        var imageURLs = [
+             "https://www.wemove.eu/sites/wemove.eu/files/webform/campaign/lo-stato-attuale-della-deforestazione-nel-mondo.jpg"
+           , "https://m.foolcdn.com/media/dubs/original_images/Farm.jpg"
+           , "https://greentumble.com/wp-content/uploads/2015/08/deforestation-effects-animals.jpg"
+           , "https://media.saltscapes.com/images/articles/2809/Intro.jpg"
+           , "https://images.newindianexpress.com/uploads/user/imagelibrary/2020/4/19/w900X450/NGOs_helping.jpg?w=400&dpr=2.6"
+        ];
+        function getImageTag() {
+          var img = '<img src=\"';
+          var randomIndex = Math.floor(Math.random() * imageURLs.length);
+          img += imageURLs[randomIndex];
+          img += '\" alt=\"Some alt text\"/ width = 800>';
+          return img;
+        }
+      </script>
+</head>
+
+<body>
+      
+    <script type="text/javascript">
+        document.write(getImageTag());
+    </script>
+</body>
+
+</html>
